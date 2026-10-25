@@ -1,0 +1,55 @@
+{
+  "name": "pricetracker-glp1-mcp",
+  "version": "1.0.0",
+  "description": "Read-only MCP server for US GLP-1 telehealth prices from PriceTracker GLP-1 (pricetrackerglp1.com): dated all-in prices, cheapest-first rankings, price history, manufacturer cash prices and the monthly GLP-1 Price Index.",
+  "mcpName": "io.github.caraulani/pricetracker-glp1-mcp",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./web": "./src/web-handler.js"
+  },
+  "bin": {
+    "pricetracker-glp1-mcp": "bin/pricetracker-glp1-mcp.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "server.json",
+    "smithery.yaml",
+    "llms-snippet.txt"
+  ],
+  "scripts": {
+    "start": "node src/http.js",
+    "stdio": "node bin/pricetracker-glp1-mcp.js",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "glp-1",
+    "semaglutide",
+    "tirzepatide",
+    "wegovy",
+    "zepbound",
+    "drug-prices",
+    "open-data",
+    "health"
+  ],
+  "homepage": "https://pricetrackerglp1.com/data",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caraulani/pricetracker-glp1-mcp.git"
+  },
+  "author": "Julian Caraulani <hello@pricetrackerglp1.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

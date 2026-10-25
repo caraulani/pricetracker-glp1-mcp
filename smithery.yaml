@@ -1,0 +1,17 @@
+# Smithery (https://smithery.ai). Two options, see PUBLISH-PLAN.md:
+#  A) Preferred: list the already-hosted endpoint https://pricetrackerglp1.com/api/mcp
+#     via smithery.ai/new ("bring your own URL"); this file is then unused.
+#  B) Let Smithery host it: container runtime builds ./Dockerfile; the server
+#     listens on $PORT (Smithery sets 8081) and serves streamable HTTP at /mcp.
+# No configuration or API key is needed: all data is public (CC BY 4.0).
+runtime: "container"
+build:
+  dockerfile: "Dockerfile"
+  dockerBuildPath: "."
+startCommand:
+  type: "http"
+  configSchema:
+    type: "object"
+    properties: {}
+    required: []
+  exampleConfig: {}

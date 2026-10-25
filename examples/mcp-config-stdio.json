@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pricetracker-glp1": {
+      "command": "npx",
+      "args": ["-y", "pricetracker-glp1-mcp"]
+    }
+  }
+}

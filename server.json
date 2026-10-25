@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.caraulani/pricetracker-glp1-mcp",
+  "title": "PriceTracker GLP-1",
+  "description": "Dated US GLP-1 telehealth prices in your AI: cheapest programs, price history, cash prices, index.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/caraulani/pricetracker-glp1-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://pricetrackerglp1.com/data",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pricetrackerglp1.com/api/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "pricetracker-glp1-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}

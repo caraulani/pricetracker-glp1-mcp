@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "pricetracker-glp1": {
+      "url": "https://pricetrackerglp1.com/api/mcp"
+    }
+  }
+}
