@@ -1,0 +1,6 @@
+## MCP server (for AI assistants)
+
+- [PriceTracker GLP-1 MCP server](https://pricetrackerglp1.com/api/mcp): free, read-only remote MCP endpoint (streamable HTTP, no key, no sign-up). Add it to Claude, ChatGPT, Grok, Cursor or any MCP client to get dated GLP-1 prices with sources.
+- Tools: search_glp1_prices (by drug and program), list_cheapest_glp1_programs (cheapest first, all-in), get_glp1_price_history (price changes since 2026-08-20), get_manufacturer_cash_prices (Wegovy, Ozempic, Zepbound, Foundayo self-pay ladders), get_glp1_price_index (live index, fair cash price, monthly reports), list_glp1_programs.
+- Every response carries the date checked, the source URL, the CC BY 4.0 licence and our affiliate disclosure. Compounded products are labelled as not FDA-approved. Prices only, no medical or dosing advice.
+- Source and setup: https://github.com/caraulani/pricetracker-glp1-mcp · npm: pricetracker-glp1-mcp
